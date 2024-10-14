@@ -85,23 +85,84 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  {
+    name: "HTML",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "CSS",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "JavaScript",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "TypeScript",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "React",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Next.js",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Node.js",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Git",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Tailwind",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Prisma",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "MongoDB",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "GraphQL",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Express",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "PostgreSQL",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Python",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "Framer Motion",
+    level: "90%",
+    image: ""
+  }
 ] as const;
