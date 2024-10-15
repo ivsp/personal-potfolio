@@ -9,10 +9,11 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { links } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/cntext/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView(links[0].name, 0.5);
-
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -65,6 +66,10 @@ export default function Intro() {
           href={"#contact"}
           className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 
           rounded-full outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 transition"
+          onClick={() => {
+            setActiveSection(links[5].name);
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
@@ -90,7 +95,7 @@ export default function Intro() {
           href="https://github.com/ivsp"
           target="_blank"
           className="bg-white text-gray-700 border border-gray-900/50 p-4 flex items-center justify-center gap-2 rounded-full text-[1.35rem]
-         outline-none focus:scale-[1.15] hover:scale-[1.15] transition hover:text-gray-950"
+         outline-none focus:scale-[1.15] hover:scale-[1.15] transition hover:text-gray-950 cursor-pointer"
         >
           <FaGithubSquare />
         </a>
