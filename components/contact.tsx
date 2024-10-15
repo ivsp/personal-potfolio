@@ -1,13 +1,17 @@
 "use client";
 import { links } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeading from "./section-heading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { senEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView(links[5].name, 0.05);
+  const emailRef = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
   return (
     <motion.section
       ref={ref}
@@ -26,27 +30,38 @@ export default function Contact() {
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col">
+      <form
+        className="mt-10 flex flex-col"
+        action={async (formData: FormData) => {
+          const { data, error } = await senEmail(formData);
+          if (error) {
+            toast.error(JSON.stringify(error));
+            return;
+          }
+          toast.success("Email enviado correctamente");
+          console.log();
+          if (emailRef.current) emailRef.current.value = "";
+          if (messageRef.current) messageRef.current.value = "";
+        }}
+      >
         <input
+          ref={emailRef}
           type="email"
           className="h-14 rounded-lg borderBlack p-4"
           placeholder="Your email"
+          name="email"
+          required
+          max={50}
         />
         <textarea
+          ref={messageRef}
           className="h-52 my-3 rounded-lg borderBlack p-4"
           placeholder="Your message"
+          name="message"
+          required
+          maxLength={5000}
         />
-        <button
-          type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900
-          text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-105 active:scale-100"
-        >
-          Submit{" "}
-          <FaPaperPlane
-            className="text-xs opacity-70 transition-all
-          group-hover:translate-x-1 group-hover:-trnaslate-y-1"
-          />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
