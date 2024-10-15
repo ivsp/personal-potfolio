@@ -49,9 +49,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        Hola, soy Iván. Desarrollador full stack con 3 años de experiencia.
-        Disfruto desarrollando páginas y aplicaciones web. Centrado en React
-        (Next.js)
+        Soy Iván. Desarrollador full stack con 3 años de experiencia en el
+        desarrollo de interfaces intuitivas y funcionales. Especializado en
+        React y Next.js
+        <br />
       </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -64,41 +65,43 @@ export default function Intro() {
       >
         <Link
           href={"#contact"}
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 
+          className="group w-[200px] bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 
           rounded-full outline-none focus:scale-110 hover:scale-105 hover:bg-gray-950 transition"
           onClick={() => {
-            setActiveSection(links[5].name);
+            setActiveSection(links[4].name);
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me{" "}
+          Contacto{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
           href="/CV. Iván Sánchez Pérez.pdf"
           download={true}
-          className="group bg-white text-gray-900 border border-gray-900/50 px-7 py-3 flex items-center 
+          className="group w-[200px] bg-white text-gray-900 border border-gray-900/50 px-7 py-3 flex items-center 
         justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-100 transition cursor-pointer"
         >
-          Download CV{" "}
+          Descarga CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/ivansperez/"
-          target="_blank"
-          className="bg-white text-gray-700 border border-gray-900/50 p-4 flex items-center justify-center gap-2 rounded-full 
+        <div className="flex items-center justify-center gap-2 px-4 text-lg font-medium">
+          <a
+            href="https://www.linkedin.com/in/ivansperez/"
+            target="_blank"
+            className="bg-white text-gray-700 border border-gray-900/50 p-4 flex items-center justify-center gap-2 rounded-full text-[1.25rem]
         outline-none focus:scale-[1.15] hover:scale-[1.15] transition hover:text-gray-950"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href="https://github.com/ivsp"
-          target="_blank"
-          className="bg-white text-gray-700 border border-gray-900/50 p-4 flex items-center justify-center gap-2 rounded-full text-[1.35rem]
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href="https://github.com/ivsp"
+            target="_blank"
+            className="bg-white text-gray-700 border border-gray-900/50 p-4 flex items-center justify-center gap-2 rounded-full text-[1.35rem]
          outline-none focus:scale-[1.15] hover:scale-[1.15] transition hover:text-gray-950 cursor-pointer"
-        >
-          <FaGithubSquare />
-        </a>
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

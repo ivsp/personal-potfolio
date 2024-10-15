@@ -10,10 +10,10 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
-  const { ref, inView } = useSectionInView(links[4].name, 0.5);
+  const { ref, inView } = useSectionInView(links[3].name, 0.5);
   return (
     <section ref={ref} id="experience" className="scoll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>Mi Experiencia</SectionHeading>
       <VerticalTimeline lineColor="" animate={true}>
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>

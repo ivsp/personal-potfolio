@@ -8,55 +8,55 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Sobre mi",
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
+    name: "Stack",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiencia",
     hash: "#experience",
   },
+  // {
+  //   name: "Projects",
+  //   hash: "#projects",
+  // },
   {
-    name: "Contact",
+    name: "Contacto",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "DESARROLLADOR FULL STACK",
+    location: "Pampling (Sevilla)",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Integraciones con plataformas de Ecommerce como Shopify y BigCommerce. Implementación de sistemas de pago como Google Pay y plataforma de ADYEN. Integración de Klaviyo como plataforma de Email marketing. Además, he desarrollado aplicaciones de intranet que conectan con sistemas internos como SGA (sistema de gestión de almacenes) y ERPs. El stack empleado es: React, TypeScript, PHP, Laravel y MySQL.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "septiembre 2023 - actualidad",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "DESARROLLADOR FULL STACK",
+    location: "Attomo Digital (Madrid)",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Entre los trabajos destacados se encuentra el desarrollo de 2 CRM inmobiliarios (desarrollo front y back) y diversas webs. Conexión con Stripe como plataforma de pagos. Migraciones de aplicaciones de React a Next. Integración de server side rendering. Integración y despliegues continuos con GitHub. Integración de test unitarios con Jest y conexiones a CMS como Contentful y Strapi. El stack empleado principalmente fue: React, Next, Node, Express y MongoDb.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "septiembre 2022 - septiembre 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "INGENIERO DE CAMINOS, CANALES Y PUERTOS",
+    location: "Fhecor Ingenieros Consultores (Sevilla)",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Entre mis trabajos destacan la coordinación de la campaña de inspección especial del puente del Centenario, en Sevilla. La asistencia técnica a la dirección de obras en proyectos de reparación de puentes. La inspección de estructuras y el cálculo de puentes de vigas.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "enero 2018  - noviembre 2021",
   },
 ] as const;
 
@@ -86,6 +86,36 @@ export const projectsData = [
 
 export const skillsData = [
   {
+    name: "React",
+    level: "80%",
+    image: ""
+  },
+  {
+    name: "Next.js",
+    level: "70%",
+    image: ""
+  },
+  {
+    name: "TypeScript",
+    level: "70%",
+    image: ""
+  },
+  {
+    name: "JavaScript",
+    level: "90%",
+    image: ""
+  },
+  {
+    name: "React Testing Library",
+    level: "70%",
+    image: ""
+  },
+  {
+    name: "Jest",
+    level: "70%",
+    image: ""
+  },
+  {
     name: "HTML",
     level: "90%",
     image: ""
@@ -96,53 +126,13 @@ export const skillsData = [
     image: ""
   },
   {
-    name: "JavaScript",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "TypeScript",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "React",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Next.js",
-    level: "90%",
+    name: "Tailwind",
+    level: "70%",
     image: ""
   },
   {
     name: "Node.js",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Git",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Tailwind",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Prisma",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "MongoDB",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "GraphQL",
-    level: "90%",
+    level: "60%",
     image: ""
   },
   {
@@ -151,18 +141,68 @@ export const skillsData = [
     image: ""
   },
   {
-    name: "PostgreSQL",
-    level: "90%",
+    name: "MongoDB",
+    level: "75%",
+    image: ""
+  }, 
+  {
+    name: "MySQL",
+    level: "60%",
     image: ""
   },
   {
-    name: "Python",
+    name: "PostgreSQL",
+    level: "50%",
+    image: ""
+  },
+  {
+    name: "GraphQL",
+    level: "60%",
+    image: ""
+  },
+  {
+    name: "Docker",
+    level: "60%",
+    image: ""
+  },
+  {
+    name: "Contentful",
+    level: "80%",
+    image: ""
+  },
+  {
+    name: "Strapi",
+    level: "65%",
+    image: ""
+  },
+  {
+    name: "Git",
     level: "90%",
     image: ""
   },
   {
     name: "Framer Motion",
-    level: "90%",
+    level: "60%",
+    image: ""
+  },
+  {
+    name: "SOLID",
+    level: "70%",
+    image: ""
+  },
+  {
+    name: "TDD",
+    level: "70%",
+    image: ""
+  },
+  {
+    name: "API REST",
+    level: "80%",
+    image: ""
+  },
+  {
+    name: "Sonar",
+    level: "70%",
     image: ""
   }
 ] as const;

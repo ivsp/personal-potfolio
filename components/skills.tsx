@@ -20,13 +20,14 @@ const fadeInAnimatinosVariants = {
 };
 
 export default function Skills() {
-  const { ref } = useSectionInView(links[3].name, 0.5);
+  const { ref } = useSectionInView(links[2].name, 0.5);
   return (
     <section
       ref={ref}
+      id="skills"
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>Stack</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text.lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

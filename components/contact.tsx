@@ -9,7 +9,7 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView(links[5].name, 0.05);
+  const { ref } = useSectionInView(links[4].name, 0.05);
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLTextAreaElement>(null);
   return (
@@ -22,13 +22,13 @@ export default function Contact() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>Contacto</SectionHeading>
       <p className="text-gray-700 -mt-6">
-        Please contact me directly at{" "}
+        Contacta directamente al correo{" "}
         <a className="underline" href="mailto:ivansperez93@gmail.com">
           ivansperez93@gmail.com
         </a>{" "}
-        or through this form.
+        o a través de este formulario.
       </p>
       <form
         className="mt-10 flex flex-col"
@@ -48,7 +48,7 @@ export default function Contact() {
           ref={emailRef}
           type="email"
           className="h-14 rounded-lg borderBlack p-4"
-          placeholder="Your email"
+          placeholder="Tu email"
           name="email"
           required
           max={50}
@@ -56,7 +56,7 @@ export default function Contact() {
         <textarea
           ref={messageRef}
           className="h-52 my-3 rounded-lg borderBlack p-4"
-          placeholder="Your message"
+          placeholder="Tu mensaje"
           name="message"
           required
           maxLength={5000}

@@ -17,33 +17,35 @@ export default function About() {
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       id="about"
     >
-      <SectionHeading>About Me</SectionHeading>
+      <SectionHeading>Sobre mi</SectionHeading>
 
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        Tras graduarme en{" "}
+        <span className="font-medium">Ingeniería de Caminos</span>, encontré en
+        la programación una nueva pasión que me llevó a cambiar de rumbo. Decidí
+        inscribirme en un bootcamp{" "}
+        <span className="font-medium">de desarrollo full stack</span>, donde
+        descubrí el mundo de la tecnología y el desarrollo web..{" "}
+        <span className="italic">Lo que más disfruto de la programación</span>{" "}
+        es la resolución de problemas y el análisis.{" "}
+        <span className="underline">Me encanta</span> la sensación de encontrar
+        la solución a un nproblema. Mi stack principal es{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, JavaScript, TypeScript, Node, Express y MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Aunque también estoy familiarizado con PHP y MySQL. Siempre estoy
+        buscando aprender nuevas tecnologías. Es por eso que también me he
+        formado en buenas prácticas de programación aprendiendo{" "}
+        <span className="font-medium">
+          SOLID, TDD y herramientas como Docker, Jest y React Testing Library
+        </span>
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">Pero no todo es programar</span>, me encanta el
+        deporte, la naturaleza y la aventura.{" "}
+        <span className="font-medium">Crossfit y escalada</span> son los dos
+        deportes que más practico.{" "}
       </p>
     </motion.section>
   );
