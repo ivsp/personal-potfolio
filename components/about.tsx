@@ -38,12 +38,12 @@ export default function About() {
         </span>
       </p>
 
-      <p>
+      {/* <p>
         <span className="italic">Pero no todo es programar</span>, me encanta el
         deporte, la naturaleza y la aventura.{" "}
         <span className="font-medium">Crossfit y escalada</span> son los dos
         deportes que más practico.{" "}
-      </p>
+      </p> */}
     </motion.section>
   );
 }
