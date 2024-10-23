@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Iván | Portfolio web",
-  description: "Iván is a full-stack developer with 3 years of experience",
+  description:
+    "Iván es un desarrollador Full Stack con 3 años de experiencia. Especializado en React y Next. Familiarizado con clean code, principios SOLID y metodologías ágiles.",
 };
 
 export default function RootLayout({
