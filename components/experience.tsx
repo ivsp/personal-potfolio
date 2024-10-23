@@ -46,6 +46,16 @@ export default function Experience() {
               <p className="!mt-1 !font-normal text-gray-700">
                 {experience.description}
               </p>
+              <ul className="list-disc ">
+                {experience.marks.map((mark, index) => (
+                  <li
+                    className="!ml-5 !mt-1 !font-normal text-[0.8125rem]/[1.1rem] text-gray-700"
+                    key={index}
+                  >
+                    {mark}
+                  </li>
+                ))}
+              </ul>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

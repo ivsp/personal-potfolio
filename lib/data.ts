@@ -35,20 +35,39 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "DESARROLLADOR FULL STACK",
+    title: "FULL STACK TEAM LEAD",
     location: "Pampling (Sevilla)",
-    description:
-      "Integraciones con plataformas de Ecommerce como Shopify y BigCommerce. Implementación de sistemas de pago como Google Pay y plataforma de ADYEN. Integración de Klaviyo como plataforma de Email marketing. Además, he desarrollado aplicaciones de intranet que conectan con sistemas internos como SGA (sistema de gestión de almacenes) y ERPs. El stack empleado es: React, TypeScript, PHP, Laravel y MySQL.",
+    description: "Transicioné a un rol de liderazgo como Team Lead tras haber gestionado y desarrollado con éxito varios procesos dentro de la empresa.",
     icon: React.createElement(LuGraduationCap),
-    date: "septiembre 2023 - actualidad",
+    date: "junio 2024 - actualidad",
+    marks: []
   },
   {
-    title: "DESARROLLADOR FULL STACK",
+    title: "MIDDLE FULL STACK DEVELOPER",
+    location: "Pampling (Sevilla)",
+    description:
+      "Destacan los siguientes hitos dentro de mi trayectoria:",
+    icon: React.createElement(LuGraduationCap),
+    date: "septiembre 2023 - mayo 2024",
+    marks: ["Integraciones con plataformas de Ecommerce como Shopify y Bigcommerce.", "Implementación de sistemas de pago con ADYEN.", "Integración de Klaviyo como herramienta de Email Marketing.", "Desarrollo de aplicaciones de intranet."]
+  },
+  {
+    title: "MIDDLE FULL STACK DEVELOPER (MERN)",
     location: "Attomo Digital (Madrid)",
     description:
-      "Entre los trabajos destacados se encuentra el desarrollo de 2 CRM inmobiliarios (desarrollo front y back) y diversas webs. Conexión con Stripe como plataforma de pagos. Migraciones de aplicaciones de React a Next. Integración de server side rendering. Integración y despliegues continuos con GitHub. Integración de test unitarios con Jest y conexiones a CMS como Contentful y Strapi. El stack empleado principalmente fue: React, Next, Node, Express y MongoDb.",
+      "Transicioné a un rol de gestión de equipo como tras haber gestionado y desarrollado con éxito varios proyectos dentro de la empresa. Algunos aspectos destacados de mi experiencia incluyen:",
+    icon: React.createElement(LuGraduationCap),
+    date: "junio 2023 - septiembre 2023",
+    marks: ["Actualización de tecnologías: Migraciones y empleo de stack moderno y actualizado.", "Gestión de equipo: Responsable y supervisor de un equipo de 3 personas. Liderando un proyecto de larga duración enfocado en la gestión de una empresa del sector inmobiliario."]
+  },
+  {
+    title: "JUNIOR FULL STACK DEVELOPER",
+    location: "Attomo Digital (Madrid)",
+    description:
+      "Programador Full Stack (MERN) en el departamento de desarrollo. Trabajando en diversos proyectos como CRMs inmobiliarios y webs responsives.",
     icon: React.createElement(CgWorkAlt),
-    date: "septiembre 2022 - septiembre 2023",
+    date: "septiembre 2022 - mayo 2023",
+    marks: []
   },
   {
     title: "INGENIERO DE CAMINOS, CANALES Y PUERTOS",
@@ -57,6 +76,7 @@ export const experiencesData = [
       "Entre mis trabajos destacan la coordinación de la campaña de inspección especial del puente del Centenario, en Sevilla. La asistencia técnica a la dirección de obras en proyectos de reparación de puentes. La inspección de estructuras y el cálculo de puentes de vigas.",
     icon: React.createElement(FaReact),
     date: "enero 2018  - noviembre 2021",
+    marks: []
   },
 ] as const;
 
@@ -105,31 +125,31 @@ export const skillsData = [
     level: "90%",
     image: ""
   },
-  {
-    name: "React Testing Library",
-    level: "70%",
-    image: ""
-  },
-  {
-    name: "Jest",
-    level: "70%",
-    image: ""
-  },
-  {
-    name: "HTML",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "CSS",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Tailwind",
-    level: "70%",
-    image: ""
-  },
+  // {
+  //   name: "React Testing Library",
+  //   level: "70%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Jest",
+  //   level: "70%",
+  //   image: ""
+  // },
+  // {
+  //   name: "HTML",
+  //   level: "90%",
+  //   image: ""
+  // },
+  // {
+  //   name: "CSS",
+  //   level: "90%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Tailwind",
+  //   level: "70%",
+  //   image: ""
+  // },
   {
     name: "Node.js",
     level: "60%",
@@ -155,54 +175,54 @@ export const skillsData = [
     level: "50%",
     image: ""
   },
-  {
-    name: "GraphQL",
-    level: "60%",
-    image: ""
-  },
-  {
-    name: "Docker",
-    level: "60%",
-    image: ""
-  },
-  {
-    name: "Contentful",
-    level: "80%",
-    image: ""
-  },
-  {
-    name: "Strapi",
-    level: "65%",
-    image: ""
-  },
-  {
-    name: "Git",
-    level: "90%",
-    image: ""
-  },
-  {
-    name: "Framer Motion",
-    level: "60%",
-    image: ""
-  },
-  {
-    name: "SOLID",
-    level: "70%",
-    image: ""
-  },
-  {
-    name: "TDD",
-    level: "70%",
-    image: ""
-  },
-  {
-    name: "API REST",
-    level: "80%",
-    image: ""
-  },
-  {
-    name: "Sonar",
-    level: "70%",
-    image: ""
-  }
+  // {
+  //   name: "GraphQL",
+  //   level: "60%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Docker",
+  //   level: "60%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Contentful",
+  //   level: "80%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Strapi",
+  //   level: "65%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Git",
+  //   level: "90%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Framer Motion",
+  //   level: "60%",
+  //   image: ""
+  // },
+  // {
+  //   name: "SOLID",
+  //   level: "70%",
+  //   image: ""
+  // },
+  // {
+  //   name: "TDD",
+  //   level: "70%",
+  //   image: ""
+  // },
+  // {
+  //   name: "API REST",
+  //   level: "80%",
+  //   image: ""
+  // },
+  // {
+  //   name: "Sonar",
+  //   level: "70%",
+  //   image: ""
+  // }
 ] as const;
