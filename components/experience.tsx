@@ -8,9 +8,11 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { invariant } from "framer-motion";
 
 export default function Experience() {
-  const { ref, inView } = useSectionInView(links[3].name, 0.35);
+  const { ref, inView } = useSectionInView(links[3].name, 0.2);
+  console.log(ref, inView);
   return (
     <section ref={ref} id="experience" className="scoll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Mi Experiencia</SectionHeading>
@@ -29,7 +31,7 @@ export default function Experience() {
                 opacity: inView ? 1 : 0,
                 transform: inView ? "none" : "translateX(40px)",
                 transition: `all 0.3s ease-in-out`,
-                transitionDelay: `${0.1 * index}`,
+                transitionDelay: `${0.1 + 0.1 * index}`,
               }}
               icon={experience.icon}
               iconStyle={{
@@ -43,18 +45,19 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{experience.title}</h3>
               <p className="font-normal !mt-0">{experience.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <p className="!mt-1 !font-normal text-[13px] !sm:text-[16px] text-gray-700">
                 {experience.description}
               </p>
-              <ul className="list-disc ">
-                {experience.marks.map((mark, index) => (
-                  <li
-                    className="!ml-5 !mt-1 !font-normal text-[0.8125rem]/[1.1rem] text-gray-700"
-                    key={index}
-                  >
-                    {mark}
-                  </li>
-                ))}
+              <ul className="list-disc">
+                {experience.marks.length !== 0 &&
+                  experience.marks.map((item, index) => (
+                    <li
+                      key={index}
+                      className="!ml-5 !mt-1 !font-normal text-[13px] sm:text-[16px] text-gray-700"
+                    >
+                      {item && item}
+                    </li>
+                  ))}
               </ul>
             </VerticalTimelineElement>
           </React.Fragment>

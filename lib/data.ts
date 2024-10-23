@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "FULL STACK TEAM LEAD",
     location: "Pampling (Sevilla)",
     description: "Transicioné a un rol de liderazgo como Team Lead tras haber gestionado y desarrollado con éxito varios procesos dentro de la empresa.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "junio 2024 - actualidad",
     marks: []
   },
@@ -47,7 +47,7 @@ export const experiencesData = [
     location: "Pampling (Sevilla)",
     description:
       "Destacan los siguientes hitos dentro de mi trayectoria:",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "septiembre 2023 - mayo 2024",
     marks: ["Integraciones con plataformas de Ecommerce como Shopify y Bigcommerce.", "Implementación de sistemas de pago con ADYEN.", "Integración de Klaviyo como herramienta de Email Marketing.", "Desarrollo de aplicaciones de intranet."]
   },
@@ -56,7 +56,7 @@ export const experiencesData = [
     location: "Attomo Digital (Madrid)",
     description:
       "Transicioné a un rol de gestión de equipo como tras haber gestionado y desarrollado con éxito varios proyectos dentro de la empresa. Algunos aspectos destacados de mi experiencia incluyen:",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "junio 2023 - septiembre 2023",
     marks: ["Actualización de tecnologías: Migraciones y empleo de stack moderno y actualizado.", "Gestión de equipo: Responsable y supervisor de un equipo de 3 personas. Liderando un proyecto de larga duración enfocado en la gestión de una empresa del sector inmobiliario."]
   },
@@ -74,7 +74,7 @@ export const experiencesData = [
     location: "Fhecor Ingenieros Consultores (Sevilla)",
     description:
       "Entre mis trabajos destacan la coordinación de la campaña de inspección especial del puente del Centenario, en Sevilla. La asistencia técnica a la dirección de obras en proyectos de reparación de puentes. La inspección de estructuras y el cálculo de puentes de vigas.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "enero 2018  - noviembre 2021",
     marks: []
   },
